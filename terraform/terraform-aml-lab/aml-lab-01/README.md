@@ -10,5 +10,6 @@ az ml job create --file job.yml --stream
 - Metryki: accuracy (Studio → Experiments → intro-sklearn)
 - Artefakty: `outputs/model.joblib`, `outputs/metrics.json`
 
-https://github.com/user-attachments/assets/84c6ec65-9adb-4c35-aa1c-a8f4769a61ee
+![Screenshot](https://github.com/user-attachments/assets/84c6ec65-9adb-4c35-aa1c-a8f4769a61ee)
+
 
