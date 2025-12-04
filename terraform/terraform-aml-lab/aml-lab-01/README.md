@@ -1,0 +1,14 @@
+# AML Lab 01 — Pierwszy eksperyment (CLI v2)
+
+## Uruchomienie
+az extension add -n ml -y
+az configure --defaults group=rg-aml-<indeks> workspace=amlws-<indeks> location=francecentral
+az ml compute create --name cpu-cluster-<indeks> --type amlcompute --size Standard_DS2_v2 --min-instances 0 --max-instances 1 --idle-time-before-scale-down 120
+az ml job create --file job.yml --stream
+
+## Wyniki
+- Metryki: accuracy (Studio → Experiments → intro-sklearn)
+- Artefakty: `outputs/model.joblib`, `outputs/metrics.json`
+
+https://github.com/user-attachments/assets/84c6ec65-9adb-4c35-aa1c-a8f4769a61ee
+
