@@ -1,10 +1,20 @@
-## 🧩 Continuous Integration – GitHub Actions
+# Azure MLOps CI/CD Pipeline
 
-Ten projekt zawiera workflow **CI-ML**, który:
-- uruchamia się automatycznie na push, PR lub manualnie,
-- instaluje zależności z plików `requirements*.txt`,
-- wykonuje lint (flake8) i format check (black),
-- uruchamia testy pytest,
-- trenuje model ML (Logistic Regression),
-- publikuje model jako artefakt z nazwą środowiska (`model-dev`, `model-prod`),
-- wykorzystuje repozytoryjne Variables i Secrets.
+This project demonstrates an end-to-end MLOps workflow on Microsoft Azure using:
+
+- GitHub Actions (CI/CD)
+- Terraform (Infrastructure as Code)
+- Python (ML training pipeline)
+- Pytest (testing)
+- Flake8 & Black (code quality)
+- Azure environment variables & secrets
+
+## Architecture
+
+1. Developer pushes code
+2. GitHub Actions runs:
+   - lint & formatting checks
+   - tests
+   - model training
+3. Model artifact is generated and versioned
+4. Infrastructure is provisioned using Terraform
