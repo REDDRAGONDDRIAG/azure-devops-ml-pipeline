@@ -9,8 +9,6 @@ The architecture consists of three main layers:
 2. Model Training and Validation
 3. Deployment and Monitoring
 
-![Architecture Diagram](path/to/architecture-diagram.png)
-
 # Features
 - Automated data preprocessing
 - Support for multiple ML algorithms
