@@ -23,18 +23,6 @@ The architecture consists of three main layers:
 - Azure Machine Learning
 - Docker
 
-# Directory Structure
-```
-├── data
-│   ├── raw
-│   └── processed
-├── notebooks
-├── src
-│   ├── ingestion
-│   ├── training
-│   └── evaluation
-└── tests
-```
 
 # Setup Instructions
 1. Clone the repository:
